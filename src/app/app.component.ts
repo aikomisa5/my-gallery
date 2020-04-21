@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {NgxGalleryOptions} from '@kolkov/ngx-gallery';
+import {NgxGalleryOptions, NgxGalleryThumbnailsComponent} from '@kolkov/ngx-gallery';
 import {NgxGalleryImage} from '@kolkov/ngx-gallery';
 import {NgxGalleryAnimation} from '@kolkov/ngx-gallery';
 
@@ -17,12 +17,16 @@ export class AppComponent implements OnInit{
   ngOnInit() {
     this.galleryOptions = [
       {
-        width: '500px',
-        height: '500px',
-        thumbnailsColumns: 4,
+        width: '400px',
+        height: '400px',
+        thumbnailsColumns: 5,
+        layout: "thumbnails-down",
         arrowPrevIcon: 'fa fa-chevron-left',
         arrowNextIcon: 'fa fa-chevron-right',
-        imageAnimation: NgxGalleryAnimation.Slide
+        imageAnimation: NgxGalleryAnimation.Slide,
+        previewZoom: true,
+        previewRotate: true,
+        imageDescription: true
       },
       // max-width 800
       {
@@ -43,30 +47,35 @@ export class AppComponent implements OnInit{
 
     this.galleryImages = [
       {
-        small: 'assets/1.jpg',
-        medium: 'assets/1.jpg',
-        big: 'assets/1.jpg'
+        small: 'assets/bondra.jpg',
+        medium: 'assets/bondra.jpg',
+        big: 'assets/bondra.jpg',
+        description: "Bondra"
       },
       {
-        small: 'assets/2.jpg',
-        medium: 'assets/2.jpg',
-        big: 'assets/2.jpg'
+        small: 'assets/kimba.jpg',
+        medium: 'assets/kimba.jpg',
+        big: 'assets/kimba.jpg',
+        description: "Kimba"
       },
       {
-        small: 'assets/3.jpg',
-        medium: 'assets/3.jpg',
-        big: 'assets/3.jpg'
+        small: 'assets/fifo.jpg',
+        medium: 'assets/fifo.jpg',
+        big: 'assets/fifo.jpg',
+        description: "Fifo"
       },
       {
-        small: 'assets/4.jpg',
-        medium: 'assets/4.jpg',
-        big: 'assets/4.jpg'
+        small: 'assets/nala.jpg',
+        medium: 'assets/nala.jpg',
+        big: 'assets/nala.jpg',
+        description: "Nala"
       },
       {
-        small: 'https://preview.ibb.co/kZGsLm/img8.jpg',
-        medium: 'https://preview.ibb.co/kZGsLm/img8.jpg',
-        big: 'https://preview.ibb.co/kZGsLm/img8.jpg'
-      },      
+        small: 'assets/kira.jpg',
+        medium: 'assets/kira.jpg',
+        big: 'assets/kira.jpg',
+        description: "Kira"
+      }      
     ];
   }
 }
