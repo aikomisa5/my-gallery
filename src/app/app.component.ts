@@ -18,8 +18,8 @@ export class AppComponent implements OnInit{
     this.galleryOptions = [
       {
         width: '400px',
-        height: '400px',
-        thumbnailsColumns: 5,
+        height: '530px',
+        thumbnailsColumns: 8,
         layout: "thumbnails-down",
         arrowPrevIcon: 'fa fa-chevron-left',
         arrowNextIcon: 'fa fa-chevron-right',
@@ -47,9 +47,9 @@ export class AppComponent implements OnInit{
 
     this.galleryImages = [
       {
-        small: 'assets/bondra.jpg',
-        medium: 'assets/bondra.jpg',
-        big: 'assets/bondra.jpg',
+        small: 'assets/bondra.jpeg',
+        medium: 'assets/bondra.jpeg',
+        big: 'assets/bondra.jpeg',
         description: "Bondra"
       },
       {
@@ -75,7 +75,25 @@ export class AppComponent implements OnInit{
         medium: 'assets/kira.jpg',
         big: 'assets/kira.jpg',
         description: "Kira"
-      }      
+      },
+      {
+        small: 'assets/pelusa.jpeg',
+        medium: 'assets/pelusa.jpeg',
+        big: 'assets/pelusa.jpeg',
+        description: "Pelusa"
+      },
+      {
+        small: 'assets/sultan.jpeg',
+        medium: 'assets/sultan.jpeg',
+        big: 'assets/sultan.jpeg',
+        description: "Sultan"
+      },
+      {
+        small: 'assets/blanquita.jpeg',
+        medium: 'assets/blanquita.jpeg',
+        big: 'assets/blanquita.jpeg',
+        description: "Blanquita"
+      }                  
     ];
   }
 }
