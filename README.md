@@ -1,5 +1,7 @@
 # MyGallery
 
+Link: https://aikomisa5.github.io/my-gallery/
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.2.
 
 ## Development server
